@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-8</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .schedule {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .day-schedule {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .day-schedule h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .lessons li {
+            padding: 8px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+
+        .lessons li:first-child {
+            background-color: #e0f7fa; 
+        }
+
+        .lessons li:last-child {
+            background-color: #fff9c4; 
+        }
+
+        .lessons li:nth-child(even) {
+            background-color: #fce4ec; 
+        }
+
+        .lessons li:nth-child(odd) {
+            background-color: #e8f5e9; 
+        }
+
+        .lessons li:nth-child(3n) {
+            background-color: #ede7f6; 
+        }
+
+        .lessons li:hover {
+            background-color: #ffe0b2; 
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .lessons li:active {
+            background-color: #ffb74d; 
+        }
+
+        .lessons li:focus {
+            outline: 2px solid #64b5f6; 
+        }
+
+        .lessons li:disabled {
+            background-color: #f5f5f5; 
+            cursor: not-allowed;
+        }
+
+        .lessons li::before {
+            content: "• ";
+            color: #7cb342; 
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
+        <p>Даний елемент має залишитись неоформленим.</p>
+        <p id="greycol">Пофарбуйте мене в сірий колір (color:grey).</p>
+        <div>Даний елемент має залишитись неоформленим.</div>
+        <div><p>Пофарбуйте мене в червоний колір (color:red).</p></div>
+        <h3>Даний елемент має залишитись неоформленим.</h3>
+        <p>Пофарбуйте мене в зелений колір (color:green).</p>
+        <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
+    </div>
+
+    <div class="schedule">
+        <div class="day-schedule">
+            <h2>Понеділок</h2>
+            <ul class="lessons">
+                <li>Математика</li>
+                <li>Українська мова</li>
+                <li>Історія</li>
+            </ul>
+        </div>
+        <div class="day-schedule">
+            <h2>Вівторок</h2>
+            <ul class="lessons">
+                <li>Фізика</li>
+                <li>Хімія</li>
+                <li>Англійська мова</li>
+                <li>Інформатика</li>
+            </ul>
+        </div>
+        <div class="day-schedule">
+            <h2>Середа</h2>
+            <ul class="lessons">
+                <li>Біологія</li>
+                <li>Географія</li>
+                <li>Література</li>
+            </ul>
+        </div>
+        <div class="day-schedule">
+            <h2>Четвер</h2>
+            <ul class="lessons">
+                <li>Малювання</li>
+                <li>Музика</li>
+                <li>Трудове навчання</li>
+            </ul>
+        </div>
+        <div class="day-schedule">
+            <h2>П'ятниця</h2>
+            <ul class="lessons">
+                <li>Фізкультура</li>
+                <li>Основи здоров'я</li>
+                <li disabled>Захист України</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

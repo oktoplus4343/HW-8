@@ -1,0 +1,16 @@
+.text-box h3 {
+    color: pink;
+  }
+  
+  .text-box #greycol {
+    color: grey;
+  }
+  
+  .text-box div > p {
+    color: red;
+  }
+  
+  .text-box p:last-of-type {
+    color: yellow;
+  }
+  
